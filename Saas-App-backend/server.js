@@ -15,6 +15,11 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+
+app.get("/", (req, res) => {
+  res.send("Backend is working 🚀");
+});
+
 app.use("/api/resumes",resumeRoutes)
 app.use("/api/ats",atsRoutes)
 app.use("/api/linkedin",linkedinRoutes)
