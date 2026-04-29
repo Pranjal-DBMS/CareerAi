@@ -3,7 +3,7 @@ const express = require("express");
 // const fetch = require("node-fetch");   // npm install node-fetch@2
 
  
-const AI_SERVICE_URL =  "http://localhost:5001";
+const AI_SERVICE_URL =  process.env.AI_SERVICE_URL|| "https://careerai-2.onrender.com";
  
 // Multer config — accept images up to 10 MB in memory
 
