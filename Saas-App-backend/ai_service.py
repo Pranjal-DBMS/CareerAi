@@ -826,7 +826,7 @@ def health():
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5001))
+    port = int(os.environ.get("PORT", 5041))
     print(f"[CareerAI] Starting on port {port}")
     print(f"[CareerAI] HF token: {'SET' if HF_TOKEN else 'NOT SET — image features will fail'}")
     print("[CareerAI] Ready — no model preload needed.")
