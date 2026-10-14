@@ -18,4 +18,8 @@ async function generateAI(prompt) {
   }
 }
 
-module.exports = { generateAI, generatewithGemini: generateAI };
+
+module.exports = {
+  generateAI,
+  generateWithGemini: generateAI
+};
